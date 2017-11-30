@@ -9,6 +9,8 @@ use Coinbase\Wallet\Resource\Account;
 use Coinbase\Wallet\Resource\Address;
 use Coinbase\Wallet\Resource\Application;
 use Coinbase\Wallet\Resource\BitcoinAddress;
+use Coinbase\Wallet\Resource\LitecoinAddress;
+use Coinbase\Wallet\Resource\EthrereumAddress;
 use Coinbase\Wallet\Resource\Buy;
 use Coinbase\Wallet\Resource\Checkout;
 use Coinbase\Wallet\Resource\CurrentUser;
@@ -766,6 +768,10 @@ class Mapper
                 return $expanded ? $this->injectApplication($data) : new Application($data['resource_path']);
             case ResourceType::BITCOIN_ADDRESS:
                 return new BitcoinAddress($data['address']);
+            case ResourceType::LITECOIN_ADDRESS:
+                return new LitecoinAddress($data['address']);
+            case ResourceType::ETHEREUM_ADDRESS:
+                return new EthereumAddress($data['address']);
             case ResourceType::BUY:
                 return $expanded ? $this->injectBuy($data) : new Buy($data['resource_path']);
             case ResourceType::CHECKOUT:
