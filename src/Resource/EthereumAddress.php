@@ -3,7 +3,7 @@
 namespace Coinbase\Wallet\Resource;
 use Coinbase\Wallet\Enum\ResourceType;
 
-class EthrereumAddress extends Resource
+class EthereumAddress extends Resource
 {
     private $address;
 
