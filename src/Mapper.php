@@ -10,7 +10,7 @@ use Coinbase\Wallet\Resource\Address;
 use Coinbase\Wallet\Resource\Application;
 use Coinbase\Wallet\Resource\BitcoinAddress;
 use Coinbase\Wallet\Resource\LitecoinAddress;
-use Coinbase\Wallet\Resource\EthrereumAddress;
+use Coinbase\Wallet\Resource\EthereumAddress;
 use Coinbase\Wallet\Resource\Buy;
 use Coinbase\Wallet\Resource\Checkout;
 use Coinbase\Wallet\Resource\CurrentUser;
